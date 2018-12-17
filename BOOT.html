@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<title></title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<style type="text/css">
+			body{	
+			background-color: #331A00;
+			}
+			.drophover:hover > .dropdown-menu{
+			display: block;
+			margin: 0;
+			}
+			.carousel-item{
+			height: 400px;
+			}
+			.carousel-item img{
+			margin: auto;
+			max-height: 100%;
+			max-width: 100%;
+			}
+			.backFill{
+			background-image: url(fon.jpg);			
+			max-height: 100%;
+			max-width: 100%;
+			}
+			.card{	
+			background-color: #653C2A;
+			color:white;
+			}
+			.navbar-brand,.navbar-toggler-icon,{	
+			background-color: #653C2A;
+			}
+			.media-body{
+			padding: 3%;	
+			background-color: #c1a162;  
+			width:60%;
+			box-sizing: border-box;
+			float:left;
+			border-radius: 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark ">
+				<a class="navbar-brand" href="#">BAKING</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown drophover">
+							<a class="nav-link dropdown-toggle" href="works.html" role="button" aria-haspopup="true" aria-expanded="false">Задания</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="cat.html">Кот</a>
+								<a class="dropdown-item" href="math.html">Формулы</a>
+								<div class="dropdown-divider"></div>
+								<div class="btn-group dropright drophover">
+									<a class="dropdown-toggle dropdown-item" style="cursor: pointer;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Выпадающий список
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Итем 1</a>
+										<a class="dropdown-item" href="#">Итем 2</a>
+										<a class="dropdown-item" href="#">Итем 3</a>
+										<a class="dropdown-item" href="#">Итем 4</a>
+										<a class="dropdown-item" href="#">Итем 5</a>
+										<a class="dropdown-item" href="#">Итем 6</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="cat.html">Кот</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#" data-toggle="modal" data-target="#myModal">SPECIAL</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog" role="document">
+					<div class="card">
+						<div class="card-header text-white">
+							HI!!!
+						</div>
+						<div class="card-body">
+							<p>GOOD MORNING</p>
+							<hr>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">DEFINITELY GOOD</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">NOT REALLY GOOD</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container-fluid ">
+				<div class="row">
+					<div class="col-md-4 col-xl-3">
+						<div id="accordion">
+							<br>
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h4 class="mb-0">
+									<button class="btn btn-link" data-toggle="collapse" data-target="#SiteMap" aria-expanded="true" aria-controls="SiteMap">
+									Карта сайта
+									</button>
+									</h5>
+								</div>
+								<div id="SiteMap" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										<a href="BOOT.html">Главная</a>
+										<ul>
+											<li>
+												<a href="needtodo.html">Задания</a>
+												<ul>
+													<li> <a href="cat.html">Кот</a></li>
+													<li> <a href="math.html">Формулы</a></li>
+												</ul>
+											</li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal">SPECIAL</a></li>
+											<li><a href="#">JS</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingTwo">
+									<h5 class="mb-0">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Contacts" aria-expanded="false" aria-controls="Contacts">
+									Контакты
+									</button>
+									</h5>
+								</div>
+								<div id="Contacts" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+									<div class="card-body">
+										<ul>
+											<li><a href=#>Вк</a></li>
+											<li><a href=#>Почта</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</div>
+					<div class="col-md-8 col-xl-9">
+						<br>
+						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							</ol>
+							<div class="carousel-inner backFill rounded">
+								<div class="carousel-item active">
+									<img class="d-block" src="1.jpg" alt="кексы" title="Кексы">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block" src="2.jpg" alt="Оладьи" title="Оладьи">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block" src="3.jpg" alt="Печеньки" title="Печеньки">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block" src="4.jpg" alt="Тортик" title="Тортик">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block" src="5.jpg" alt="Еще тортик" title="Торт">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block" src="8.jpg" alt="Булки" title="Булки">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<br>
+						<nav>
+							<div class="nav nav-tabs" id="nav-tab" role="tablist">
+								<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Кексы</a>
+								<a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false">Оладьи</a>
+								<a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false">Печеньки</a>
+								<a class="nav-item nav-link" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false">Торт</a>
+								<a class="nav-item nav-link" id="nav-5-tab" data-toggle="tab" href="#nav-5" role="tab" aria-controls="nav-5" aria-selected="false">Тортик</a>
+								<a class="nav-item nav-link" id="nav-6-tab" data-toggle="tab" href="#nav-6" role="tab" aria-controls="nav-6" aria-selected="false">Булки</a>
+							</div>
+						</nav>
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+								<br>
+								<div class="media">
+									<div class="media-body">
+										<h5 >Кексы</h5>
+										<p>
+											140 г сливочного масла<br>
+											50 мл молока<br>
+											140 г темного шоколада<br>
+											2 больших яйца<br>
+											1 ч.л экстракт ванили<br>
+											3 столовые ложки сметаны<br>
+											200 г светло-коричневого сахара<br>
+											100 г пшеничной муки<br>
+											0.5 ч.л разрыхлителя <br>
+
+											Крем:<br>
+											250 сливки 38%<br>
+											50 г маскарпоне<br>
+											1 ст.л сахарная пудра<br>
+
+											Просеять муку с разрыхлителем.<br>
+											В кастрюльке подогреть молоко и сливочное масло до растворения,снять с огня.<br>
+											Шоколад поломать и добавить к молочной массе.<br>
+											Размешать до однородности.<br>
+											Яйца размешать с сахаром,добавить сметану,ваниль.<br>
+											Постепенно вести шоколадную массу и размешать.<br>
+											Добавить муку и соединить до однородности.<br>
+											Подготовленное тесто перелить в формочки заполняя их на 3\4.<br>
+											Духовку нагреть до 170 градусов.<br>
+											Выпекать в течении 20-25 минут проверить палочкой,должны остаться шоколадные крошки.<br>
+											Остудить на решетке.<br>
+
+											Приготовление крема:<br>
+											Сливки взбить с маскарпоне и сахарной пудрой.<br>
+
+											Украшение:<br>
+											клубника<br>
+											растопленный шоколад<br>
+
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+								<br>
+								<div class="media"><div class="media-body">
+										<h5 >Оладушки</h5>
+										<p>250 г рикотты<br>
+											2 яйца<br>
+											3 ст.л молока<br>
+											3 ст.л силана (можно заменить сахаром или медом)<br>
+											2 ст.л растительного масла<br>
+											2\3 стакана муки (90 г)<br>
+											1 ч.л разрыхлителя<br>
+
+											Приготовление:<br>
+											В миске смешать рикотту,молоко,силан,масло,яйца .<br>
+											Добавить просеянную муку и разрыхлитель.<br>
+											Соединить до однородной массы и оставить на 10 минут.<br>
+											Выпекать на разогретой сковороде с растительным маслом.<br>
+
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+								<br>
+								<div class="media"><div class="media-body">
+										<h5 >Печенюхи</h5>
+										<p>тесто:<br>
+											2 стакана муки (280 г)<br>
+											100 г сахара<br>
+											4 ст.л сахарной пудры (32 г)<br>
+											щепотка соли<br>
+											200 г холодного сливочного масла(порезать на кубики)<br>
+											2 желтка<br>
+
+											начинка из сухофруктов и орехов:<br>
+											300 г сухофруктов (инжир,абрикос,клюквы,чернослива или на ваш выбор)<br>
+											100 г орехов(миндаль,пекан ,грецкий орех)<br>
+											200 г сливочного масла<br>
+											250 г коричневого сахара<br>
+											100 г меда<br>
+											щепотка соли<br>
+											3 ст.л сливки<br>
+											Приготовление теста:<br>
+											в чаше миксера смешать вместе муку,сахар,сахарную пудру,соль и сливочное масло,<br>
+											до образования крошки.<br>
+											Добавить желтки замесить тесто чтобы оно собралось в шар(долго не замешивать!).<br>
+											Тесто выкладываем на бумагу для выпечки и руками распределяем в прямоугольник тонким слоем.<br>
+											Переносим на противень и ставим в морозильную камеру на 20 минут.<br>
+											Выпекаем в духовке нагретой до 180 градусов в течении 15 минут до светло золотистого цвета.<br>
+
+											Начинка:<br>
+											Сухофрукты и орехи нарезать маленькими кубиками .<br>
+											В кастрюлю кладём сахар и сливочное масло и ставим на средний огонь.<br>
+											Помешиваем чтобы масло полностью растаяло.<br>
+											Добавляем мёд и сливки,размешиваем и снимаем с огня.<br>
+											Добавляем сухофрукты, орехи и размешиваем до однородной массы.<br>
+
+											Выкладываем начинку сверху теста и выпекаем ещё 15 минут.<br>
+											Остудить на решётке ,нарезать на квадраты.<br>
+											</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
+								<br>
+								<div class="media"><div class="media-body">
+										<h5 >Торт</h5>
+										<p>125 г сливочного масла<br>
+											3 яйца (разделить на белки и желтки)<br>
+											2 стакана пшеничной муки<br>
+											1 - 1,5 стакана сахара<br>
+											1 стакан молока<br>
+											5 ст.л варенья<br>
+											1 ч.л соды<br>
+											2 ч.л специй для пряников<br>
+											5 ч.л какао<br>
+
+											Шоколадная глазурь:<br>
+											150 г сливки 38%<br>
+											100 г горький шоколад<br>
+											30 г сливочного масла<br>
+
+											Все продукты должны быть комнатной температуры.<br>
+											Просеять в миску муку,соду,специи.<br>
+											В кастрюльке подогреть молоко,добавить какао, сахар и сливочное масло,довести до<br>
+											кипения ,остудить.<br>
+											Добавить к жидкой массе сухие ингредиенты и перемешать до однородной массы.<br>
+											Добавить варенье перемешать.<br>
+											Взбить белки до устойчивых пиков ,добавить желтки и продолжать соединять вместе.<br>
+											Аккуратно ввести яичную массу и перемешать при помощи лопатки.<br>
+											Взять форму диаметром 25 с отверстием по середине,смазать маслом,присыпать мукой.<br>
+											Вылить массу в форму.<br>
+											выпекать в заранее нагретой духовке до 180 в течении 45 минут или проверив деревянной палочкой (она должна быть сухой).<br>
+											Остудить, вынуть из формы .<br>
+
+											Приготовление глазури :<br>
+											В кастрюльке подогреть сливки ,добавить поломанный шоколад и сливочное масло.<br>
+											Размешать до полного растворения,гладкой массы.<br>
+											Немного остудить и залить торт.<br>
+											Украсить фруктами и ягодами по желанию.<br>
+</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane fade" id="nav-5" role="tabpanel" aria-labelledby="nav-5-tab">
+								<br>
+								<div class="media"><div class="media-body">
+										<h5 >Тортик</h5>
+										<p>150 мл кипящей воды<br>
+											1 пакетик чая<br>
+											120 г сливочного масла<br>
+											4 яйца <br>
+											3\4 стакана сахара <br>
+											1 стакан меда<br>
+											2 чашки муки с разрыхлителем 280 г<br>
+											1 стакан натертой моркови<br>
+
+											Для глазури:<br>
+											250 г сахарной пудры<br>
+											4 ст.л лимонного сока<br>
+
+											Для украшения:<br>
+											фрукты или ягоды<br>
+
+											Приготовление:<br>
+											Духовку нагреть до 170 градусов.<br>
+											В кипящей воде заварит пакетик чая и оставить остывать.<br>
+											Сливочное масло растопить в микроволновой печи.<br>
+											В чаше миксера взбить яйца с сахаром до светлой пышной массы.<br>
+											Добавляем сливочное масло.чай и и мед соединяем до однородности.<br>
+											Добавляем муку и морковь и перемешиваем при помощи лопатки.<br>
+											Выливаем в форму и выпекаем в течении 45-55 минут.<br>
+											Чтобы кекс стал золотистым , а при проверке палочкой на ней оставались влажные крошки.<br>
+											Остудить на решетке.<br>
+
+											Приготовление глазури:<br>
+											смешать сахарную пудру с соком должна получиться масса которой можно полить кекс.<br>
+											Украсить по желанию.<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane fade" id="nav-6" role="tabpanel" aria-labelledby="nav-6-tab">
+								<br>
+								<div class="media"><div class="media-body">
+										<h5 >Булки</h5>
+										<p>500 муки пшеничной<br>
+											80 г сахарной пудры<br>
+											20 г свежих дрожжей<br>
+											0.5ч.л соли<br>
+											2 больших яйца <br>
+											200 теплого молока<br>
+											75 г растопленного сливочного масла<br>
+
+											Для начинки:<br>
+											густое варенье(джем,или конфитюр)<br>
+
+											Сахарный сироп:<br>
+											0.5 стакана воды<br>
+											четверть стакана сахара<br>
+
+											Дать закипеть и проварить ещё минут 5 на медленном огне.<br>
+											Приготовление теста:<br>
+											В чаше миксера соединить муку,дрожжи ,сахар,соль.<br>
+											Добавить яйца,молоко ,сливочное масло.<br>
+											Замесить в течении 9 минут до гладкого,мягкого теста.<br>
+											Скатать в шар , положить в чашу накрыв пищевой пленкой.<br>
+											Оставить в теплом месте чтобы тесто увеличилось в двое.<br>
+
+											Формовка и выпечка:<br>
+											Тесто обмять,разделить на 12 равных частей.<br>
+											Скатать в шарики.<br>
+											Каждый раскатать в прямоугольник (примерно 18 на 10).<br>
+											Смазать вареньем,свернуть в рулет.<br>
+											Рулет разрезать вдоль с одной стороны не доходя до конца 1 см.<br>
+											Свернуть улиткой.<br>
+											Накрыть полотенцем и оставить подходить ещё на 15 минут.<br>
+
+											Духовку нагреть до 180 градусов.<br>
+											Смазать желтком булочки и выпекать в течении 15 минут -20 минут.<br>
+											Горячие булочки смазать сахарным сиропом.<br>
+</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</body>
+</html>
